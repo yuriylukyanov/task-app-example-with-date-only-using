@@ -3,6 +3,7 @@ using System;
 using Implementations.RepositoriesEF;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MigrationProject.Migrations
 {
     [DbContext(typeof(TaskAppDbContext))]
-    partial class TaskAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240322174108_AddTaskDeleteDateTime")]
+    partial class AddTaskDeleteDateTime
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

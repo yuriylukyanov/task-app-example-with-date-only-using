@@ -13,5 +13,7 @@ namespace DomainLogic.Models
         public DateOnly StartDate { get; set; }
         public DateOnly FinishDate { get; set; }
         public string Name { get; set; }
+
+        public DateTimeOffset? DeleteDateTime { get; set; }
     }
 }

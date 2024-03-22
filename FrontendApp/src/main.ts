@@ -6,6 +6,7 @@ import Toast from 'primevue/toast';
 import ToastService from 'primevue/toastservice';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
+import ConfirmationService from 'primevue/confirmationservice';
 
 import './assets/main.css'
 import 'primevue/resources/primevue.min.css';
@@ -17,6 +18,7 @@ import "primevue/resources/themes/aura-light-green/theme.css";
 const app = createApp(App);
 app.use(PrimeVue);
 app.use(ToastService);
+app.use(ConfirmationService);
 
 app.component('Button', Button);
 app.component('Toast', Toast);
