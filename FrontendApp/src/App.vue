@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import HelloWorld from './components/Tasks.vue'
+import Tasks from './components/tasks/Tasks.vue'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld />
+      <Tasks />
     </div>
   </header>
 </template>
